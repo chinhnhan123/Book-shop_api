@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap");
+
+//  simple movie
+@layer base {
+  body {
+    @apply font-body px-5 text-primary;
+  }
+}
+
+// @layer components {
+//   .page-container {
+//     max-width: 1280px;
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
+//   .movie-list .swiper-slide {
+//     width: 300px;
+//     height: auto;
+//   }
+//   .banner .swiper {
+//     height: 100%;
+//   }
+// }
+
+// .pagination {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   gap: 20px;
+//   .selected {
+//     @apply text-primary;
+//   }
+// }
