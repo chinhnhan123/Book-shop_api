@@ -13,12 +13,14 @@ import {
 import loginReducer from "features/auth/loginSlice";
 
 const persistConfig = {
-  key: "counter",
+  key: "root",
   storage,
 };
-const persistedReducer = persistReducer(persistConfig, loginReducer);
+const persistedReducerLogin = persistReducer(persistConfig, loginReducer);
 const store = configureStore({
-  reducer: persistedReducer,
+  reducer: {
+    login: persistedReducerLogin,
+  },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {

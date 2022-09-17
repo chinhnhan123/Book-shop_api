@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         primary: "#38426C",
         banner: "#FBFCFE",
+        red: "#FB",
       },
     },
   },
