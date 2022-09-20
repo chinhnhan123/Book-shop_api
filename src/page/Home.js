@@ -2,11 +2,7 @@ import React from "react";
 import Book from "./../components/books/Book";
 
 const Home = () => {
-  return (
-    <div>
-      <Book></Book>
-    </div>
-  );
+  return <Book></Book>;
 };
 
 export default Home;

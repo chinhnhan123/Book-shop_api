@@ -10,6 +10,7 @@ module.exports = {
         primary: "#38426C",
         banner: "#FBFCFE",
         red: "#FB",
+        button: "#f3f3f3",
       },
     },
   },

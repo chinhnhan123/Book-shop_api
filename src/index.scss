@@ -6,10 +6,13 @@
 //  simple movie
 @layer base {
   body {
-    @apply font-body px-5 text-primary;
+    @apply font-body text-primary;
   }
 }
-
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
 // @layer components {
 //   .page-container {
 //     max-width: 1280px;

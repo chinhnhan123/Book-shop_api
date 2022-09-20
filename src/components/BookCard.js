@@ -1,6 +1,6 @@
 import React from "react";
 
-const BookCard = ({ title, price }) => {
+const BookCard = ({ title, price, onClickAdd }) => {
   return (
     <div className="flex flex-col w-[300px] h-full p-3 border-2 rounded-lg shadow select-none text-slate-700 movie-card">
       <img
@@ -14,7 +14,10 @@ const BookCard = ({ title, price }) => {
           <span className="">{price}$</span>
           <span className="">3</span>
         </div>
-        <button className="w-full px-6 py-3 mt-auto font-medium text-white rounded-lg bg-primary">
+        <button
+          onClick={onClickAdd}
+          className="w-full px-6 py-3 mt-auto font-medium text-white rounded-lg bg-primary"
+        >
           Add to cart
         </button>
       </div>
